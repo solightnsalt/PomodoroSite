@@ -154,14 +154,6 @@ body {
   width: 15px;
 }
 
-/* to-do */
-.todo-wrapper {
-  width: 330px;
-  height: 565px;
-  border-radius: 20px;
-  background-color: white;
-  padding: 0 12px 0 12px;
-}
 
 .todo-cards {
   height: 460px;
