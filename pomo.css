@@ -215,3 +215,13 @@ body {
 .todo-wrapper {
   background-color: white;
 }
+
+@media screen and (max-width: 766px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .timer-wrapper {
+    margin-bottom: 30px;
+  }
+}
