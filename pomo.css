@@ -129,6 +129,30 @@ body {
   height: 40px;
 }
 
+.settings-wrapper {
+  background-color: var(--main-btn);
+  border-radius: 20px;
+  height: 300px;
+  width: 277px;
+  margin-top: 20px;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.settings-header>div {
+  font-weight: bold;
+}
+
+.settings-header>div>img,
+.close-btn {
+  height: 15px;
+  width: 15px;
+}
+
 
 /* to-do */
 .todo-wrapper {
