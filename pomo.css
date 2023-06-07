@@ -4,6 +4,7 @@
   --main-font: #471515;
   --main-btn: #ffd9d9;
   --main-point: #ff7c7c;
+
   /* 15분 */
   /* --lb-color1: #f2f9ff;
   --lb-color2: #153047;
@@ -153,8 +154,73 @@ body {
   width: 15px;
 }
 
+/* to-do */
+.todo-wrapper {
+  width: 330px;
+  height: 565px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 0 12px 0 12px;
+}
 
 /* to-do */
+.todo-wrapper {
+  width: 330px;
+  height: 565px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 0 12px 0 12px;
+}
+
+.todo-cards {
+  height: 460px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.add-btns {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.add-btns>a {
+  margin-left: 20px;
+}
+
+.add-btns:hover {
+  color: black;
+}
+
+.x-btns {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+
+.x-btns:hover {
+  background-color: #d0e5f9;
+  transition: 0.5s;
+}
+
+.todo-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  border-bottom: solid #d0e5f9;
+}
+
+.todo-text {
+  margin-left: 20px;
+}
+
 .todo-wrapper {
   background-color: white;
 }
