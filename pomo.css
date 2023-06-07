@@ -44,7 +44,6 @@ button {
 
 /* 아래부터 써주세요 */
 body {
-body {
   background-color: var(--main-bg);
   padding: 30px;
 }
@@ -54,7 +53,6 @@ body {
   height: 75px;
 }
 
-.nav .logo-wrapper {
 .nav .logo-wrapper {
   display: flex;
   align-items: center;
@@ -75,6 +73,7 @@ body {
 /* timer */
 .timer-wrapper {
   background-color: #ff7c7c;
+}
 .timer-wrapper {
   display: flex;
   flex-direction: column;
@@ -95,7 +94,7 @@ body {
   margin-top: 20px;
 }
 
-.timer-header>div {
+.timer-header > div {
   margin: 0 10px;
   font-weight: bold;
 }
@@ -136,7 +135,6 @@ body {
   width: 40px;
   height: 40px;
 }
-
 
 /* to-do */
 .todo-wrapper {
