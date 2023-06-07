@@ -55,7 +55,7 @@ body {
   align-items: center;
 }
 
-.nav .logo-wrapper>img {
+.nav .logo-wrapper > img {
   margin-right: 10px;
 }
 
@@ -88,7 +88,7 @@ body {
   margin-top: 20px;
 }
 
-.timer-header>div {
+.timer-header > div {
   margin: 0 10px;
   font-weight: bold;
 }
@@ -144,23 +144,14 @@ body {
   margin: 10px;
 }
 
-.settings-header>div {
+.settings-header > div {
   font-weight: bold;
 }
 
-.settings-header>div>img,
+.settings-header > div > img,
 .close-btn {
   height: 15px;
   width: 15px;
-}
-
-/* to-do */
-.todo-wrapper {
-  width: 330px;
-  height: 565px;
-  border-radius: 20px;
-  background-color: white;
-  padding: 0 12px 0 12px;
 }
 
 /* to-do */
@@ -189,7 +180,7 @@ body {
   cursor: pointer;
 }
 
-.add-btns>a {
+.add-btns > a {
   margin-left: 20px;
 }
 
