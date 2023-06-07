@@ -1,15 +1,15 @@
 :root {
-/* 30분 */
-  --main-bg: #FFF2F2; 
+  /* 30분 */
+  --main-bg: #fff2f2;
   --main-font: #471515;
   --main-btn: #ffd9d9;
   --main-point: #ff7c7c;
-/* 15분 */
+  /* 15분 */
   /* --lb-color1: #f2f9ff;
   --lb-color2: #153047;
   --lb-color3: #d9eeff;
   --lb-color4: #8bcaff; */
-/* 5분 */
+  /* 5분 */
   /* --sb-color1: #f2fff5;
   --sb-color2:#14401d;
   --sb-color3: #dafae0;
@@ -38,9 +38,8 @@ button {
   background: transparent;
 }
 
-
 /* 아래부터 써주세요 */
-body{
+body {
   background-color: var(--main-bg);
   padding: 30px;
 }
@@ -50,12 +49,12 @@ body{
   height: 75px;
 }
 
-.nav .logo-wrapper{
+.nav .logo-wrapper {
   display: flex;
   align-items: center;
 }
 
-.nav .logo-wrapper >img{
+.nav .logo-wrapper>img {
   margin-right: 10px;
 }
 
@@ -67,18 +66,71 @@ body{
   padding-top: 100px;
 }
 
-
-
 /* timer */
-.timer-wrapper{
-    background-color: #ff7c7c;
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 800px;
+}
+
+.timer-header {
+  width: 200px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-btn);
+  border: solid 2px var(--main-font);
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.timer-header>div {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.tomato {
+  width: 41px;
+  height: 41px;
+}
+
+.timer-counter {
+  color: var(--main-font);
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 256px;
+  line-height: 80%;
+  margin: 30px 0;
+}
+
+.btn-setting,
+.btn-stop {
+  width: 70px;
+  height: 70px;
+  background-color: var(--main-btn);
+  border-radius: 22px;
+}
+
+.btn-play-pause {
+  width: 120px;
+  height: 90px;
+  background-color: var(--main-point);
+  border-radius: 30px;
+}
+
+.setting,
+.stop,
+.play-pause {
+  width: 40px;
+  height: 40px;
 }
 
 
-
-
-
 /* to-do */
-.todo-wrapper{
-    background-color: white;
+.todo-wrapper {
+  background-color: white;
 }
