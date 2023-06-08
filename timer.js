@@ -9,22 +9,23 @@ let pomoInterval;
 let restInterval;
 let pomoTime = 1500; //25분 1500
 let restTime = 10; //5분 300
-let isRunning = true;
+let isRunning = false;
 
 // 1. 재생 버튼을 누르면 pomodoro 시작하면서 재생버튼이 일시정지 버튼으로
 playPause.addEventListener('click', () => {
-   playButton.classList.toggle('timer-btn-hide');
-   pauseButton.classList.toggle('timer-btn-hide');
-   
-   if (isRunning) {
+  playButton.classList.toggle('timer-btn-hide');
+  pauseButton.classList.toggle('timer-btn-hide');
+  
+  if (isRunning) {
       isRunning = false;
+      clearInterval(pomoInterval);
+  }
+  else if (!isRunning) {
+      isRunning = true;
       pomoInterval = setInterval(pomodoro, 1000);
       pomodoro();
-   }
-   else if (!isRunning) {
-      isRunning = true;
-      clearInterval(pomoInterval);
-   }
+      
+  }
 })
 
 // 2. pomodoro 25분 카운트 시작~ 끝나면 알림음
