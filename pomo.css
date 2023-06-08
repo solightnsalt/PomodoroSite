@@ -40,7 +40,8 @@ button {
   background: transparent;
 }
 
-button:hover, button>img {
+button:hover,
+button > img {
   cursor: pointer;
 }
 
@@ -121,8 +122,6 @@ body {
   border-radius: 22px;
 }
 
-
-
 .btn-play-pause {
   width: 120px;
   height: 90px;
@@ -156,10 +155,13 @@ body {
 }
 
 @keyframes opacity {
-  0%{opacity: 1;}
-  100%{opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
 
 .settings-header {
   display: flex;
@@ -180,7 +182,6 @@ body {
 .timer-btn-hide {
   display: none;
 }
-
 
 /* todo */
 .todo-cards {
@@ -241,6 +242,12 @@ body {
 
 .todo-text {
   margin-left: 20px;
+  font-weight: 600;
+}
+
+#todo-done {
+  text-decoration: line-through;
+  color: gray;
 }
 
 .todo-wrapper {
@@ -262,8 +269,8 @@ body {
   margin: 0 auto;
 }
 
-#hidden{
-  display: none
+#hidden {
+  display: none;
 }
 
 .submit-todo {
@@ -276,4 +283,29 @@ body {
 
 .submit-todo :first-child {
   padding: 10px 10px 10px 40px;
+}
+
+.done-btn {
+  border: solid 1px var(--main-font);
+  position: absolute;
+  right: 10px;
+  font-weight: 900;
+  font-size: 13px;
+  width: 80px;
+  height: 30px;
+  background-color: var(--main-btn);
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.done-btn > img {
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.done-btn:hover {
+  transition: 0.5s;
+  background-color: #ff7c7c;
 }

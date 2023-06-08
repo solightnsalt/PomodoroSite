@@ -3,19 +3,24 @@ function todo() {
   const todoInput = document.querySelector(".input-todo");
   const saves = document.querySelector(".todo-text");
   const todoCards = document.querySelector(".todo-cards");
-
   let data = JSON.parse(localStorage.getItem("data"));
   if (data === null) {
     localStorage.setItem("data", JSON.stringify([]));
+    window.location.reload();
   }
 
   function render() {
     todoCards.innerHTML = data
       .map((item) => {
         return `
-      <div class="todo-card">
-        <img src="img/checkBox.png" alt="checkCompleteBox" width="24px" height="24px">
-        <div class="todo-text">${item.content}</div>
+      <div class="todo-card">    
+        <div class="todo-text" >${item.content}</div>
+
+        <div class="done-btn" data-id="${item.id}">
+            <img src="img/tomato (5).png" alt="doneBtn" width="20px" height="20px">
+            Done !
+        </div>
+
       </div>`;
       })
       .join("");
@@ -41,7 +46,9 @@ function todo() {
     const newData = {
       id: createId(),
       content: newContent,
+      done: true,
     };
+
     data.push(newData);
 
     localStorage.setItem("data", JSON.stringify(data));
@@ -70,6 +77,19 @@ function todo() {
   addBtn.addEventListener("click", clickInput);
   inputBtn.addEventListener("click", saveTodo);
   // saves.addEventListener('submit',saveTodo);
+
+  document.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (e.target.classList.contains("done-btn")) {
+      const remainContent = data.filter((item) => item.id !== Number(e.target.dataset.id));
+      console.log(remainContent);
+      data = remainContent;
+      localStorage.setItem("data", JSON.stringify(data));
+    }
+    if (data !== null) {
+      render();
+    }
+  });
 
   if (data !== null) {
     render();
