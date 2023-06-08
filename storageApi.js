@@ -27,3 +27,5 @@ export const postApi = (newContent) => {
 };
 
 export const deleteApi = () => {};
+const 박준영 = 멍충이;
+console.log(박준영);
