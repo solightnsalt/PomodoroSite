@@ -17,7 +17,7 @@ function todo() {
         <div class="todo-text" >${item.content}</div>
 
         <div class="done-btn" data-id="${item.id}">
-            <img src="img/tomato (5).png" alt="doneBtn" width="20px" height="20px">
+            <img src="img/tomato (5).png" alt="doneBtn" width="20px" height="20px" class="done-img">
             Done !
         </div>
 
