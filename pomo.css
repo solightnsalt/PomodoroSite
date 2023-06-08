@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'HS-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Katuri';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   /* 30분 */
   --main-bg: #fff2f2;
@@ -10,6 +31,7 @@
   --lb-color2: #153047;
   --lb-color3: #d9eeff;
   --lb-color4: #8bcaff; */
+
   /* 5분 */
   /* --sb-color1: #f2fff5;
   --sb-color2:#14401d;
@@ -40,18 +62,19 @@ button {
   background: transparent;
 }
 
-button:hover, button>img {
+button:hover,
+button>img {
   cursor: pointer;
 }
 
 input[type="number"] {
   -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
 }
 
@@ -72,7 +95,7 @@ body {
   align-items: center;
 }
 
-.nav .logo-wrapper > img {
+.nav .logo-wrapper>img {
   margin-right: 10px;
 }
 
@@ -94,6 +117,7 @@ body {
 }
 
 .timer-header {
+  font-family: 'Katuri';
   width: 200px;
   height: 45px;
   display: flex;
@@ -103,9 +127,11 @@ body {
   border: solid 2px var(--main-font);
   border-radius: 30px;
   margin-top: 20px;
+  font-size: 23px;
+  color: var(--main-font);
 }
 
-.timer-header > div {
+.timer-header>div {
   margin: 0 10px;
   font-weight: bold;
 }
@@ -117,7 +143,7 @@ body {
 
 .timer-counter {
   color: var(--main-font);
-  font-family: "Roboto Flex";
+  font-family: 'HS-Regular';
   font-style: normal;
   font-weight: 800;
   font-size: 256px;
@@ -159,6 +185,7 @@ body {
   width: 307px;
   margin-top: 20px;
   padding: 20px;
+  font-family: 'NanumSquareRound';
 }
 
 .show-settings {
@@ -171,11 +198,11 @@ body {
   margin-bottom: 5px;
 }
 
-.settings-header > div {
+.settings-header>div {
   font-weight: bolder;
 }
 
-.settings-header > div > img,
+.settings-header>div>img,
 .close-btn {
   height: 15px;
   width: 15px;
@@ -185,7 +212,7 @@ body {
   margin: 15px 0;
 }
 
-.my-timer-line:first-child{
+.my-timer-line:first-child {
   margin-bottom: 15px;
 }
 
@@ -204,7 +231,8 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
-.my-timer-line> input {
+
+.my-timer-line>input {
   width: 65px;
   height: 30px;
   border-radius: 8px;
@@ -237,6 +265,10 @@ body {
 
 
 /* ✨ todo ✨ */
+.todo-wrapper {
+  font-family: 'NanumSquareRound';
+}
+
 .todo-cards {
   height: 460px;
   overflow-y: scroll;
@@ -254,11 +286,11 @@ body {
   cursor: pointer;
 }
 
-.add-btns > a {
+.add-btns>a {
   margin-left: 20px;
 }
 
-.add-btns > form {
+.add-btns>form {
   display: flex;
 }
 
@@ -306,7 +338,7 @@ body {
   margin: 0 auto;
 }
 
-#hidden{
+#hidden {
   display: none
 }
 

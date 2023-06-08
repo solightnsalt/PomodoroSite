@@ -78,17 +78,34 @@ function beep() {
 stopButton.addEventListener('click', () => {
     clearInterval(pomoInterval);
     isStopped = false;
-    pomoTime = customMinute * 60;
-    restTime = customRest * 60;
-    const minutes = String(Math.floor(pomoTime / 60)).padStart(2, '0');
-    const seconds = String(pomoTime % 60).padStart(2, '0');
-    timerCount.innerHTML = `${minutes}<br>${seconds}`;
-    if (isRunning) {
-      isRunning = false;
-      isStopped = true;
-      playButton.classList.toggle('timer-btn-hide');
-      pauseButton.classList.toggle('timer-btn-hide');
+    console.log(customMinute)
+
+    if (customMinute === undefined) {
+      pomoTime = 1500; //25분 1500
+      restTime = 300; //5분 300
+      const minutes = String(Math.floor(pomoTime / 60)).padStart(2, '0');
+      const seconds = String(pomoTime % 60).padStart(2, '0');
+      timerCount.innerHTML = `${minutes}<br>${seconds}`;
+      if (isRunning) {
+        isRunning = false;
+        isStopped = true;
+        playButton.classList.toggle('timer-btn-hide');
+        pauseButton.classList.toggle('timer-btn-hide'); 
     }
+    }
+    else {
+      pomoTime = customMinute * 60;
+      restTime = customRest * 60;
+      const minutes = String(Math.floor(pomoTime / 60)).padStart(2, '0');
+      const seconds = String(pomoTime % 60).padStart(2, '0');
+      timerCount.innerHTML = `${minutes}<br>${seconds}`;
+      if (isRunning) {
+        isRunning = false;
+        isStopped = true;
+        playButton.classList.toggle('timer-btn-hide');
+        pauseButton.classList.toggle('timer-btn-hide'); 
+    }
+}
 })
 
 
@@ -97,7 +114,7 @@ btnSetting.addEventListener('click', showSettings);
 
 function showSettings() {
   settingBox.classList.toggle('show-settings')
- }
+}
 
 
 // 셋팅 시간설정 세이브 버튼 event
