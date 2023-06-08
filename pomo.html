@@ -80,7 +80,12 @@
                 <div class="add-btns">
                     <img src="img/add.png" alt="addBtn">
                     <a> Add Task</a>
+
                 </div>
+                <form id='hidden' class="submit-todo">
+                    <input class="input-todo" type="text" placeholder="할 일을 입력해주세요." autofocus />
+                    <button type='submit' class="input-btn"></button>
+                </form>
                 <div class="todo-cards">
                     <div class="todo-card">
                         <img src="img/checkCompleteBox.png" alt="checkCompleteBox" width="24px" height="24px">
@@ -106,5 +111,6 @@
 </body>
 <script src="timer.js"></script>
 <script src="todo.js"></script>
+<script type="module" src="/storageApi.js"></script>
 
 </html>
