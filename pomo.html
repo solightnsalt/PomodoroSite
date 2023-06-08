@@ -58,16 +58,20 @@
                         <img src="img/close.png" alt="close" class="close-btn">
                     </button>
                 </div>
-                <div class="settings">
-                    <form id="my-timer-form">
+                <div class="settings-body">
+                    <form id="my-timer-form" class="time-setting-form">
                         <p class="my-timer-line">
-                            <label for="work-duration">Pomodoro:</label>
-                            <input type="number" id="work-duration" value="25" min="1">
+                            <label for="work-duration">Time</label>
+                            <input type="number" id="work-duration" value="25" max="60" min="1">
                         </p>
                         <p class="my-timer-line">
-                            <label for="rest-duration">Rest:</label>
-                            <input type="number" id="rest-duration" value="5" min="1">
+                            <label for="rest-duration">Rest</label>
+                            <input type="number" id="rest-duration" value="5" max="60" min="1">
                         </p>
+                        <div class="settings-btns">
+                            <button type="button" class="save-btn">Save</button>
+                            <button type="button" class="close-btn2" onclick="showSettings()">Cancel</button>
+                        </div>
                     </form>
                 </div>
             </div>
