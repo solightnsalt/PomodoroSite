@@ -85,3 +85,13 @@ stopButton.addEventListener('click', () => {
       pauseButton.classList.toggle('timer-btn-hide');
     }
 })
+
+// 세팅을 누르면 세팅창 보였다가 다시 누르거나 x를 누르면 없어짐
+const btnSetting = document.querySelector('.btn-setting');
+const settingBox = document.querySelector('.settings-wrapper');
+
+btnSetting.addEventListener('click', showSettings);
+
+function showSettings() {
+  settingBox.classList.toggle('show-settings')
+ }
