@@ -154,7 +154,13 @@ body {
   width: 15px;
 }
 
+/* timer js 연결된 css */
+.timer-btn-hide {
+  display: none;
+}
 
+
+/* todo */
 .todo-cards {
   height: 460px;
   overflow-y: scroll;

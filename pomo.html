@@ -30,19 +30,20 @@
 
             <!-- 시계부분 -->
             <div class="timer-counter">
-                24<br>59
+                25<br>00
             </div>
 
             <!-- 타이머 버튼 -->
             <div class="timer-btns">
-                <button class="btn-setting">
+                <button class="btn-setting" id="open-settings">
                     <img src="img/more.png" alt="" class="setting">
                 </button>
                 <button class="btn-play-pause">
-                    <img src="img/play_pause.png" alt="" class="play-pause">
+                    <img src="img/play.png" alt="" class="play-pause" id="start-btn">
+                    <img src="img/pause.png" alt="" class="play-pause timer-btn-hide" id="pause-btn">
                 </button>
                 <button class="btn-stop">
-                    <img src="img/stop.png" alt="" class="stop">
+                    <img src="img/stop.png" alt="" class="stop" id="stop-btn">
                 </button>
             </div>
 
@@ -58,16 +59,16 @@
                     </button>
                 </div>
                 <div class="settings">
-                    <div class="set-left"></div>
-                    <div class="set-right"></div>
-                </div>
-                <div class="settings">
-                    <div class="set-left"></div>
-                    <div class="set-right"></div>
-                </div>
-                <div class="settings">
-                    <div class="set-left"></div>
-                    <div class="set-right"></div>
+                    <form id="my-timer-form">
+                        <p class="my-timer-line">
+                           <label for="work-duration">Pomodoro:</label>
+                           <input type="number" id="work-duration" value="25" min="1">
+                        </p>
+                        <p class="my-timer-line">
+                           <label for="rest-duration">Rest:</label>
+                           <input type="number" id="rest-duration" value="5" min="1">
+                        </p>
+                     </form>
                 </div>
             </div>
         </div>
@@ -79,11 +80,11 @@
                 <div class="add-btns">
                     <img src="img/add.png" alt="addBtn">
                     <a> Add Task</a>
-                    
+
                 </div>
-                <form id='hidden' class="submit-todo" > 
-                    <input class="input-todo" type="text" placeholder="할 일을 입력해주세요." autofocus/> 
-                    <button type='submit' class="input-btn"></button> 
+                <form id='hidden' class="submit-todo">
+                    <input class="input-todo" type="text" placeholder="할 일을 입력해주세요." autofocus />
+                    <button type='submit' class="input-btn"></button>
                 </form>
                 <div class="todo-cards">
                     <div class="todo-card">
@@ -110,5 +111,6 @@
 </body>
 <script src="timer.js"></script>
 <script src="todo.js"></script>
+<script type="module" src="/storageApi.js"></script>
 
 </html>
