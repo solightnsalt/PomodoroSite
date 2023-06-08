@@ -3,7 +3,7 @@ export const getApi = () => {
   if (data === null) {
     localStorage.setItem("data", JSON.stringify([]));
   }
-  return data;
+  console.log(data);
 };
 
 export const postApi = (newContent) => {
@@ -25,5 +25,3 @@ export const postApi = (newContent) => {
   };
   data.push(newData);
 };
-
-export const deleteApi = () => {};
