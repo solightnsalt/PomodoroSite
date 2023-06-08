@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "HS-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Katuri";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_13@1.0/Katuri.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   /* 30분 */
   --main-bg: #fff2f2;
@@ -10,6 +31,7 @@
   --lb-color2: #153047;
   --lb-color3: #d9eeff;
   --lb-color4: #8bcaff; */
+
   /* 5분 */
   /* --sb-color1: #f2fff5;
   --sb-color2:#14401d;
@@ -43,6 +65,17 @@ button {
 button:hover,
 button > img {
   cursor: pointer;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }
 
 /* 아래부터 써주세요 */
@@ -83,6 +116,7 @@ body {
 }
 
 .timer-header {
+  font-family: "Katuri";
   width: 200px;
   height: 45px;
   display: flex;
@@ -92,6 +126,8 @@ body {
   border: solid 2px var(--main-font);
   border-radius: 30px;
   margin-top: 20px;
+  font-size: 23px;
+  color: var(--main-font);
 }
 
 .timer-header > div {
@@ -106,7 +142,7 @@ body {
 
 .timer-counter {
   color: var(--main-font);
-  font-family: "Roboto Flex";
+  font-family: "HS-Regular";
   font-style: normal;
   font-weight: 800;
   font-size: 256px;
@@ -144,32 +180,25 @@ body {
 .settings-wrapper {
   background-color: var(--main-btn);
   border-radius: 20px;
-  height: 300px;
+  height: 190px;
   width: 307px;
   margin-top: 20px;
   padding: 20px;
+  font-family: "NanumSquareRound";
 }
 
 .show-settings {
   opacity: 0;
 }
 
-@keyframes opacity {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 .settings-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
 }
 
 .settings-header > div {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .settings-header > div > img,
@@ -178,12 +207,66 @@ body {
   width: 15px;
 }
 
+.time-setting-form {
+  margin: 15px 0;
+}
+
+.my-timer-line:first-child {
+  margin-bottom: 15px;
+}
+
+.my-timer-line {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settings-btns {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.my-timer-line > input {
+  width: 65px;
+  height: 30px;
+  border-radius: 8px;
+  border: solid 1.5px #eaeaea;
+  text-align: center;
+}
+
+.close-btn2 {
+  width: 50px;
+  height: 40px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.save-btn {
+  background-color: var(--main-point);
+  width: 50px;
+  height: 40px;
+  border-radius: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
 /* timer js 연결된 css */
 .timer-btn-hide {
   display: none;
 }
 
-/* todo */
+/* ✨ todo ✨ */
+.todo-wrapper {
+  font-family: "NanumSquareRound";
+}
+
 .todo-cards {
   height: 460px;
   overflow-y: scroll;
@@ -254,16 +337,6 @@ body {
   background-color: white;
 }
 
-@media screen and (max-width: 766px) {
-  .main-container {
-    flex-direction: column;
-  }
-
-  .timer-wrapper {
-    margin-bottom: 30px;
-  }
-}
-
 .todo-input {
   width: 90%;
   margin: 0 auto;
@@ -285,27 +358,14 @@ body {
   padding: 10px 10px 10px 40px;
 }
 
-.done-btn {
-  border: solid 1px var(--main-font);
-  position: absolute;
-  right: 10px;
-  font-weight: 900;
-  font-size: 13px;
-  width: 80px;
-  height: 30px;
-  background-color: var(--main-btn);
-  border-radius: 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.done-btn > img {
-  margin-right: 2px;
-  cursor: pointer;
-}
+/* to-do 는 이 위로 써주세요 */
+/* 반응형 */
+@media screen and (max-width: 766px) {
+  .main-container {
+    flex-direction: column;
+  }
 
-.done-btn:hover {
-  transition: 0.5s;
-  background-color: #ff7c7c;
+  .timer-wrapper {
+    margin-bottom: 50px;
+  }
 }
