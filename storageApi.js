@@ -25,3 +25,5 @@ export const postApi = (newContent) => {
   };
   data.push(newData);
 };
+
+export const deleteApi = () => {};
