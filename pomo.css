@@ -22,6 +22,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: url(img/small-tomato.png) 2 2, auto;
 }
 
 ol,
@@ -37,6 +38,10 @@ input {
 button {
   border: none;
   background: transparent;
+}
+
+button:hover, button>img {
+  cursor: pointer;
 }
 
 /* 아래부터 써주세요 */
@@ -116,32 +121,49 @@ body {
   border-radius: 22px;
 }
 
+
+
 .btn-play-pause {
   width: 120px;
   height: 90px;
   background-color: var(--main-point);
   border-radius: 30px;
+  margin: 0 15px;
 }
 
-.setting,
-.stop,
 .play-pause {
   width: 40px;
   height: 40px;
+}
+
+.setting,
+.stop {
+  width: 30px;
+  height: 30px;
 }
 
 .settings-wrapper {
   background-color: var(--main-btn);
   border-radius: 20px;
   height: 300px;
-  width: 277px;
+  width: 307px;
   margin-top: 20px;
+  padding: 20px;
 }
+
+.show-settings {
+  opacity: 0;
+}
+
+@keyframes opacity {
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
 
 .settings-header {
   display: flex;
   justify-content: space-between;
-  margin: 10px;
 }
 
 .settings-header > div {
