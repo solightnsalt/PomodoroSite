@@ -3,7 +3,7 @@ export const getApi = () => {
   if (data === null) {
     localStorage.setItem("data", JSON.stringify([]));
   }
-  console.log("get완료!", data);
+  return data;
 };
 
 export const postApi = (newContent) => {
@@ -27,5 +27,3 @@ export const postApi = (newContent) => {
 };
 
 export const deleteApi = () => {};
-const 박준영 = 멍충이;
-console.log(박준영);

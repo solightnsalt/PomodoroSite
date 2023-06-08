@@ -14,7 +14,6 @@ function saveTodo(event) {
   console.log(todoInput.value); //test가 아니라 input한게 입력되도록 고치기 완료!
   const newTodo = todoInput.value;
   todoInput.value = "";
-
   document.querySelector(".submit-todo").id = "hidden";
   document.querySelector(".add-btns").removeAttribute("id");
 }
