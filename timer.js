@@ -12,8 +12,10 @@ let restInterval;
 let pomoTime = 1500; //25분 1500
 let restTime = 300; //5분 300
 let isRunning = false;
+let isResting = false;
 let customMinute;
 let customRest;
+
 
 
 // 재생 버튼을 누르면 pomodoro 시작하면서 재생버튼이 일시정지 버튼으로
@@ -21,16 +23,26 @@ playPause.addEventListener('click', () => {
   playButton.classList.toggle('timer-btn-hide');
   pauseButton.classList.toggle('timer-btn-hide');
   
-  if (isRunning) {
-      isRunning = false;
-      clearInterval(pomoInterval);
+  if (isRunning && !isResting) {
+    isRunning = false;
+    clearInterval(pomoInterval);
   }
   // 일시정지 누르면 초 그대로 멈추고 버튼 재생으로 바뀌게.
-  else if (!isRunning) {
-      isRunning = true;
-      pomoInterval = setInterval(pomodoro, 1000);
-      pomodoro();
-      
+  else if (!isRunning && !isResting) {
+    isRunning = true;
+    pomoInterval = setInterval(pomodoro, 1000);
+    pomodoro();
+  }
+  // 쉬는 시간 일 때
+  else if (isResting && !isRunning) {
+    isResting = false;
+    clearInterval(restInterval);
+  }
+
+  else if (!isResting && !isRunning) {
+    isRunning = true;
+    restInterval = setInterval(restStart, 1000);
+    restStart();
   }
 })
 
@@ -43,6 +55,8 @@ function pomodoro() {
   timerCount.innerHTML = `${minutes}<br>${seconds}`;
   if (pomoTime < 0) {
     clearInterval(pomoInterval);
+    isRunning = false;
+    isResting = true;
     restStart();
     restInterval = setInterval(restStart, 1000);
     beep();
