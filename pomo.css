@@ -63,7 +63,7 @@ button {
 }
 
 button:hover,
-button>img {
+button > img {
   cursor: pointer;
 }
 
@@ -114,7 +114,7 @@ body {
   align-items: center;
 }
 
-.nav .logo-wrapper>img {
+.nav .logo-wrapper > img {
   margin-right: 10px;
 }
 
@@ -150,7 +150,7 @@ body {
   color: var(--main-font);
 }
 
-.timer-header>div {
+.timer-header > div {
   margin: 0 10px;
   font-weight: bold;
 }
@@ -205,10 +205,11 @@ body {
   margin-top: 20px;
   padding: 20px;
   font-family: "NanumSquareRound";
+  z-index: 9999;
 }
 
 .show-settings {
-  opacity: 0;
+  display: none;
 }
 
 .settings-header {
@@ -217,11 +218,11 @@ body {
   margin-bottom: 5px;
 }
 
-.settings-header>div {
+.settings-header > div {
   font-weight: bolder;
 }
 
-.settings-header>div>img,
+.settings-header > div > img,
 .close-btn {
   height: 15px;
   width: 15px;
@@ -251,7 +252,7 @@ body {
   align-items: center;
 }
 
-.my-timer-line>input {
+.my-timer-line > input {
   width: 65px;
   height: 30px;
   border-radius: 8px;
@@ -284,6 +285,7 @@ body {
 
 /* ✨ todo ✨ */
 .todo-wrapper {
+  background-color: white;
   font-family: "NanumSquareRound";
   margin-top: -150px;
   width: 304px;
@@ -306,11 +308,11 @@ body {
   cursor: pointer;
 }
 
-.add-btns>a {
+.add-btns > a {
   margin-left: 20px;
 }
 
-.add-btns>form {
+.add-btns > form {
   display: flex;
 }
 
@@ -365,10 +367,6 @@ body {
   color: gray;
 }
 
-.todo-wrapper {
-  background-color: white;
-}
-
 .todo-input {
   width: 90%;
   margin: 0 auto;
@@ -410,7 +408,7 @@ body {
   justify-content: center;
 }
 
-.done-btn>img {
+.done-btn > img {
   margin-right: 2px;
   cursor: pointer;
 }
@@ -433,7 +431,6 @@ body {
 .footer p {
   margin-bottom: 10px;
 }
-
 
 /* 위로 작성해주세요 */
 /* 반응형 */
