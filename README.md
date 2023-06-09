@@ -90,8 +90,7 @@
 
 
 ### API
-<img width="622" alt="image" src="https://github.com/hotcream3904/PomodoroSite/assets/98865366/b8454acb-7aca-493a-b96c-6a133e8ca686">
-
+<img width="623" alt="image" src="https://github.com/hotcream3904/PomodoroSite/assets/98865366/dd43d699-502d-4ea7-8920-538516c5bac3">
 
 
 ### 프로젝트 구성
