@@ -8,7 +8,7 @@
 
 
 
-### 프로젝트 주제
+### 🍅프로젝트 주제
 
 **간단한 시간 & 할 일 관리 웹 사이트 제작 (aka. 뽀모도로)**
 
@@ -16,7 +16,7 @@
 
 
 
-### 개발 인원 & 역할
+### 🙌개발 인원 & 역할
 
   <table>
     <tbody>
@@ -84,7 +84,7 @@
 
 
 
-### 사용 스택
+### 🔧사용 스택
 
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" /> <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" /><img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" />
 
@@ -92,7 +92,7 @@
 
 
 
-### 프로젝트 구성
+### 📝프로젝트 구성
 
 #### 메인페이지(index.html)
 
@@ -132,3 +132,38 @@
 
 
 
+
+
+### ✍🏻소감
+
+##### 김다솔
+
+변수 설정부터 하나하나 코드를 짜면서 처음 보는 오류도 마주치고 어떻게 시작해야 할지 감도 안 잡히는 부분도 있었지만 팀원들과 머리를 맞대고 차근차근 모두 해결해 내서 성취감이 뛰어났습니다💚
+
+
+
+##### 박준영
+
+
+
+##### 서명진
+
+저희 조는 분업이 잘 되었고 또, 모르는 부분이 생기면 팀원들끼리 적극적으로 도와주었습니다. 부족한 부분이 많았는데 귀찮아하시지 않고 너무 잘 도와주셔서 진짜 너무 감사했습니다. 7조 최고
+
+
+
+##### 정소희
+
+자바스크립트 로직과 로컬스토리지에 대해 깊게 공부할 수 있었던 프로젝트 입니다! 멋진 팀원분들께 많이 배웠습니다. 감사해요😘
+
+
+
+##### 최수지
+
+바닐라 JS 만으로 원하는 기능을 넣어보니까 웹페이지 하나에 얼마나 많은 로직이 필요한지 느껴졌어요. 팀원분들과 함께여서 가능했던 즐거운 시간 ♪( 'ω' و)
+
+
+
+##### 최은지
+
+html과 css로 정적 홈페이지를 구현할 때까지만 해도 별다른 어려움을 느끼지 못했었는데, JS로 기능 구현을 하려고 하니 컴퓨터가 받아들이는 방식대로 로직을 짜는 게 많이 버겁게 느껴졌습니다. 그렇지만 다 함께 프로젝트 설계부터 마무리까지 하게 되니 너무 도움도 많이 되고 재미있었던 것 같아요!
