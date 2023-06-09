@@ -125,5 +125,4 @@ saveButton.addEventListener('click', () => {
   timerCount.innerHTML = `${customMinute}<br>00`
   pomoTime = customMinute * 60
   restTime = customRest * 60
-  console.log(pomoTime, restTime, customMinute, customRest)
 })
