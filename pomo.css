@@ -402,3 +402,27 @@ body {
     margin-bottom: 50px;
   }
 }
+
+
+/* 반응형 푸터 */
+.footer {
+ 
+  padding: 20px;
+  text-align: center;
+  font-family: "NanumSquareRound";
+  font-size: 14px;
+  color: var(--main-font);
+  margin-top: 50px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+/* 반응형 */
+@media screen and (max-width: 766px) {
+  .footer {
+    font-size: 12px;
+  }
+}
+
