@@ -2,7 +2,7 @@
 
 > 이노베이션캠프(동북) 워밍업 2차 7조
 
-<img src="img/tomato (2).png" alt="tomato" style="zoom: 33%;" />
+<img src="pomo.gif" alt="tomato" style="zoom: 33%;" />
 
 
 
