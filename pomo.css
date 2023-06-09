@@ -315,11 +315,18 @@ body {
 }
 
 .input-btn {
-  background-color: #ff7c7c;
-  border-radius: 10px;
-  padding: 10px 10px;
+  font-family: "Katuri";
+  background-color: #ffd9d9;
+  border-radius: 15px;
+  padding: 5px 5px 5px 5px;
   cursor: pointer;
   margin-right: 20px;
+  border: solid 1px gainsboro;
+}
+
+.input-btn:hover {
+  transition: 0.2s;
+  background-color: #ff7c7c;
 }
 
 .add-btns:hover {
