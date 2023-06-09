@@ -265,11 +265,12 @@ body {
 /* ✨ todo ✨ */
 .todo-wrapper {
   font-family: "NanumSquareRound";
+  width: 304px;
 }
 
 .todo-cards {
   height: 460px;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 
@@ -292,11 +293,12 @@ body {
   display: flex;
 }
 
-.input_btn {
+.input-btn {
   background-color: #ff7c7c;
   border-radius: 10px;
   padding: 10px 10px;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .add-btns:hover {
@@ -325,7 +327,7 @@ body {
 
 .todo-text {
   width: 170px;
-  overflow: scroll;
+  overflow: auto;
   margin-left: 20px;
   font-weight: 600;
 }
@@ -348,12 +350,16 @@ body {
   display: none;
 }
 
+.todo-content {
+  width: 100%;
+}
+
 .submit-todo {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  width: 300px;
+  width: 304px;
 }
 
 .submit-todo :first-child {
