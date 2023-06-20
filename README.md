@@ -89,17 +89,25 @@
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white"> <img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white" /> <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" /><img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white" />
 
 
-### API
-<img width="623" alt="image" src="https://github.com/hotcream3904/PomodoroSite/assets/98865366/dd43d699-502d-4ea7-8920-538516c5bac3">
+
+
+
+### 🗺️API
+
+<img width="623" alt="image" src="README.assets/dd43d699-502d-4ea7-8920-538516c5bac3.png">
+
+
+
+
 
 
 ### 📝프로젝트 구성
 
 #### 메인페이지(index.html)
 
-![main](https://file.notion.so/f/s/4fc5e422-adaf-4f0a-843b-76cec35a3037/Untitled.png?id=7fcad548-be60-42cb-ad1d-f245c4e9f127&table=block&spaceId=38d7bd3c-d046-4b46-9b0e-fd6d2d9c0d4d&expirationTimestamp=1686370004795&signature=RrdyGpNIAFFEcktapKfn2lizC5wvYhHuRiIsbVAmr20&downloadName=Untitled.png)
+![main](https://file.notion.so/f/s/4fc5e422-adaf-4f0a-843b-76cec35a3037/Untitled.png?id=7fcad548-be60-42cb-ad1d-f245c4e9f127&table=block&spaceId=38d7bd3c-d046-4b46-9b0e-fd6d2d9c0d4d&expirationTimestamp=1687364931309&signature=0mb9ogweYZDshPULoWByuhynYThjPlP76cCoql-2ZUA&downloadName=Untitled.png)
 
-![setting](https://file.notion.so/f/s/e35c3ec4-fceb-4f6f-a7b6-0bfd77fe16ab/Untitled.png?id=508ef8fc-fcad-4bb1-80c7-4d20ac0039d0&table=block&spaceId=38d7bd3c-d046-4b46-9b0e-fd6d2d9c0d4d&expirationTimestamp=1686370019728&signature=-3IEXawdI2kgSTDNHNb576Q6AdPp1MnX5SvMUCI_K5U&downloadName=Untitled.png)
+![setting](https://file.notion.so/f/s/e35c3ec4-fceb-4f6f-a7b6-0bfd77fe16ab/Untitled.png?id=508ef8fc-fcad-4bb1-80c7-4d20ac0039d0&table=block&spaceId=38d7bd3c-d046-4b46-9b0e-fd6d2d9c0d4d&expirationTimestamp=1687365057675&signature=wP9MyOuz9LysbYXtKPfir82gnk8z0_4m-AX_hsjJZ_0&downloadName=Untitled.png)
 
 ##### 1️⃣ 재생
 
@@ -145,6 +153,8 @@
 
 ##### 박준영
 가장의 무게가 느껴지는 프로젝트였음니다,,
+
+
 
 
 ##### 서명진

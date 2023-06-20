@@ -47,12 +47,18 @@ playPause.addEventListener('click', () => {
 })
 
 
+// 시간을 받아와서 형식을 지정한 문자열로 반환하는 함수
+function getFormattedTime(time) {
+  const minutes = String(Math.floor(time / 60)).padStart(2, '0');
+  const seconds = String(time % 60).padStart(2, '0');
+  return `${minutes}<br>${seconds}`;
+}
+
+
 // pomodoro 25분 카운트 시작~ 끝나면 알림음
 function pomodoro() {
-  const minutes = String(Math.floor(pomoTime / 60)).padStart(2, '0');
-  const seconds = String(pomoTime % 60).padStart(2, '0');
   pomoTime -= 1;
-  timerCount.innerHTML = `${minutes}<br>${seconds}`;
+  timerCount.innerHTML = getFormattedTime(pomoTime)
   if (pomoTime < 0) {
     clearInterval(pomoInterval);
     isRunning = false;
@@ -66,10 +72,8 @@ function pomodoro() {
 
 // 25분이 끝나면 쉬는 시간 5분 시작. 5초~ 0초까지 알림음.
 function restStart() {
-  const restMinutes = String(Math.floor(restTime / 60)).padStart(2, '0');
-  const restSeconds = String(restTime % 60).padStart(2, '0');
   restTime -= 1;
-  timerCount.innerHTML = `${restMinutes}<br>${restSeconds}`;
+  timerCount.innerHTML = getFormattedTime(restTime);
   if (restTime < 5 && restTime >= 0) {
     beep();
   } else if (restTime < 0) {
@@ -97,9 +101,7 @@ stopButton.addEventListener('click', () => {
     if (customMinute === undefined) {
       pomoTime = 1500; //25분 1500
       restTime = 300; //5분 300
-      const minutes = String(Math.floor(pomoTime / 60)).padStart(2, '0');
-      const seconds = String(pomoTime % 60).padStart(2, '0');
-      timerCount.innerHTML = `${minutes}<br>${seconds}`;
+      timerCount.innerHTML = getFormattedTime(pomoTime);
       if (isRunning) {
         isRunning = false;
         isStopped = true;
@@ -110,9 +112,7 @@ stopButton.addEventListener('click', () => {
     else {
       pomoTime = customMinute * 60;
       restTime = customRest * 60;
-      const minutes = String(Math.floor(pomoTime / 60)).padStart(2, '0');
-      const seconds = String(pomoTime % 60).padStart(2, '0');
-      timerCount.innerHTML = `${minutes}<br>${seconds}`;
+      timerCount.innerHTML = getFormattedTime(pomoTime);
       if (isRunning) {
         isRunning = false;
         isStopped = true;
