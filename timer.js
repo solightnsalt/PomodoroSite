@@ -57,8 +57,8 @@ function pomodoro() {
     clearInterval(pomoInterval);
     isRunning = false;
     isResting = true;
-    restStart();
     restInterval = setInterval(restStart, 1000);
+    restStart();
     beep();
   }
 }
